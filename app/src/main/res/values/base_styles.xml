@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <!--Components-->
+
+    <!-- Bottom Sheets -->
+    <style name="ThemeOverlay.MyTheme.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:statusBarColor" >@android:color/transparent</item>
+        <item name="bottomSheetStyle">@style/Widget.MyTheme.BottomSheet.Modal</item>
+        <item name="android:navigationBarColor" >?colorSurface</item>
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.MyTheme.BottomSheet.Modal" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">?shapeAppearanceLargeComponent</item>
+    </style>
+
+    <!--Shape - Material allows theming of a component’s shape through the customization of corner style and radius size.  -->
+    <!--Shape Appearance for small components like chips, buttons, text fields and FABs-->
+    <style name="ShapeAppearance.MyTheme.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <!--Shape Appearance for medium components like cards, alert dialogs-->
+    <style name="ShapeAppearance.MyTheme.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <!--Shape Appearance for large components like side and bottom navigation drawers-->
+    <style name="ShapeAppearance.MyTheme.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+
+    <style name="Widget.MaterialComponents.Toolbar.PrimarySurface" parent="Widget.MaterialComponents.Toolbar.Primary"/>
+
+    <!-- customized UI views -->
+
+</resources>

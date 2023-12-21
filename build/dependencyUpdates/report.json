@@ -1,0 +1,242 @@
+{
+ "count": 25,
+ "current": {
+  "count": 22,
+  "dependencies": [
+   {
+    "group": "androidx.annotation",
+    "name": "annotation",
+    "version": "1.7.1",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/annotation#1.7.1",
+    "userReason": null
+   },
+   {
+    "group": "androidx.appcompat",
+    "name": "appcompat",
+    "version": "1.6.1",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/appcompat#1.6.1",
+    "userReason": null
+   },
+   {
+    "group": "androidx.cardview",
+    "name": "cardview",
+    "version": "1.0.0",
+    "projectUrl": "http://developer.android.com/tools/extras/support-library.html",
+    "userReason": null
+   },
+   {
+    "group": "androidx.constraintlayout",
+    "name": "constraintlayout",
+    "version": "2.1.4",
+    "projectUrl": "http://tools.android.com",
+    "userReason": null
+   },
+   {
+    "group": "androidx.coordinatorlayout",
+    "name": "coordinatorlayout",
+    "version": "1.2.0",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/coordinatorlayout#1.2.0",
+    "userReason": null
+   },
+   {
+    "group": "androidx.core",
+    "name": "core-ktx",
+    "version": "1.12.0",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/core#1.12.0",
+    "userReason": null
+   },
+   {
+    "group": "androidx.databinding",
+    "name": "viewbinding",
+    "version": "8.2.0",
+    "projectUrl": null,
+    "userReason": null
+   },
+   {
+    "group": "androidx.multidex",
+    "name": "multidex",
+    "version": "2.0.1",
+    "projectUrl": null,
+    "userReason": null
+   },
+   {
+    "group": "androidx.navigation",
+    "name": "navigation-fragment-ktx",
+    "version": "2.7.6",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/navigation#2.7.6",
+    "userReason": null
+   },
+   {
+    "group": "androidx.navigation",
+    "name": "navigation-safe-args-gradle-plugin",
+    "version": "2.7.6",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/navigation#2.7.6",
+    "userReason": null
+   },
+   {
+    "group": "androidx.navigation",
+    "name": "navigation-ui-ktx",
+    "version": "2.7.6",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/navigation#2.7.6",
+    "userReason": null
+   },
+   {
+    "group": "androidx.recyclerview",
+    "name": "recyclerview",
+    "version": "1.3.2",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/recyclerview#1.3.2",
+    "userReason": null
+   },
+   {
+    "group": "com.android.tools.build",
+    "name": "gradle",
+    "version": "8.2.0",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null
+   },
+   {
+    "group": "com.github.ajalt.colormath",
+    "name": "colormath",
+    "version": "3.3.3",
+    "projectUrl": "https://github.com/ajalt/colormath/",
+    "userReason": null
+   },
+   {
+    "group": "com.github.ajalt.colormath",
+    "name": "colormath-ext-android-colorint",
+    "version": "3.3.3",
+    "projectUrl": "https://github.com/ajalt/colormath/",
+    "userReason": null
+   },
+   {
+    "group": "com.github.ben-manes",
+    "name": "gradle-versions-plugin",
+    "version": "0.50.0",
+    "projectUrl": null,
+    "userReason": null
+   },
+   {
+    "group": "com.google.android.material",
+    "name": "material",
+    "version": "1.11.0",
+    "projectUrl": "https://github.com/material-components/material-components-android",
+    "userReason": null
+   },
+   {
+    "group": "com.jakewharton.timber",
+    "name": "timber",
+    "version": "5.0.1",
+    "projectUrl": "https://github.com/JakeWharton/timber",
+    "userReason": null
+   },
+   {
+    "group": "io.coil-kt",
+    "name": "coil",
+    "version": "2.5.0",
+    "projectUrl": "https://github.com/coil-kt/coil",
+    "userReason": null
+   },
+   {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-build-tools-impl",
+    "version": "1.9.0",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null
+   },
+   {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-compiler-embeddable",
+    "version": "1.9.0",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null
+   },
+   {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-klib-commonizer-embeddable",
+    "version": "1.9.0",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null
+   }
+  ]
+ },
+ "outdated": {
+  "count": 3,
+  "dependencies": [
+   {
+    "group": "androidx.gridlayout",
+    "name": "gridlayout",
+    "version": "1.0.0",
+    "projectUrl": "http://developer.android.com/tools/extras/support-library.html",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "1.1.0-beta01",
+     "integration": null
+    }
+   },
+   {
+    "group": "androidx.lifecycle",
+    "name": "lifecycle-runtime-ktx",
+    "version": "2.6.2",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.6.2",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.7.0-rc02",
+     "integration": null
+    }
+   },
+   {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-stdlib-jdk8",
+    "version": "1.9.0",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "1.9.10",
+     "integration": null
+    }
+   }
+  ]
+ },
+ "exceeded": {
+  "count": 0,
+  "dependencies": []
+ },
+ "undeclared": {
+  "count": 0,
+  "dependencies": []
+ },
+ "unresolved": {
+  "count": 0,
+  "dependencies": []
+ },
+ "gradle": {
+  "enabled": true,
+  "running": {
+   "isFailure": false,
+   "isUpdateAvailable": false,
+   "reason": "",
+   "version": "8.2"
+  },
+  "current": {
+   "isFailure": false,
+   "isUpdateAvailable": true,
+   "reason": "",
+   "version": "8.5"
+  },
+  "releaseCandidate": {
+   "isFailure": false,
+   "isUpdateAvailable": false,
+   "reason": "update check succeeded: no release available",
+   "version": ""
+  },
+  "nightly": {
+   "isFailure": false,
+   "isUpdateAvailable": false,
+   "reason": "update check disabled",
+   "version": ""
+  }
+ }
+}

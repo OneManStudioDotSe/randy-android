@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Emphasis modifiers for "on" colors-->
+    <dimen name="alpha_emphasis_high">0.87</dimen>
+    <dimen name="alpha_emphasis_medium">0.6</dimen>
+    <dimen name="alpha_emphasis_disabled">0.38</dimen>
+
+    <!-- space -->
+    <dimen name="space_normal">8dp</dimen>
+    <dimen name="space_magic_number">16dp</dimen>
+    <dimen name="space_casual">20dp</dimen>
+    <dimen name="space_large">24dp</dimen>
+
+    <!-- height of things -->
+    <dimen name="height_of_list_item">72dp</dimen>
+
+    <!-- width of things -->
+
+    <!-- square size of things -->
+    <dimen name="size_of_indicator">8dp</dimen>
+    <dimen name="size_of_icon">24dp</dimen>
+
+    <!-- various stuff -->
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:overScrollMode="never"
+        android:scrollbarSize="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/headerMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Customize the scene"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/random_amount_of_joints"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:enabled="true"
+                android:text="Add random amount of joints"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/has_random_speed"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:enabled="true"
+                android:text="Joints have random speed"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                style="@style/bodySimple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance to draw connection" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/discreteRangeSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stepSize="50.0"
+                android:valueFrom="100.0"
+                android:valueTo="1000.0"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/joints_have_random_color"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:enabled="true"
+                android:text="Joints have random color"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/connections_animate"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:enabled="true"
+                android:text="Animate the connections"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/drawTextOnPath"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:enabled="true"
+                android:text="Draw the connection distances in px"
+                android:layout_marginBottom="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bodySimple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connection line style"
+                    android:layout_marginEnd="6dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/line_style"
+                    android:layout_marginStart="16dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select one">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/line_style_options"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

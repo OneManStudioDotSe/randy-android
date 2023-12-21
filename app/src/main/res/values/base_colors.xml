@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_primary">#ff6c51</color>
+    <color name="color_primary_variant">#ff6c51</color>
+    <color name="color_on_primary">#fafafa</color>
+
+    <color name="color_secondary">#ff6c51</color>
+    <color name="color_secondary_variant">#ff6c51</color>
+    <color name="color_on_secondary">#000000</color>
+
+    <color name="color_background">#ffffff</color>
+    <color name="color_on_background">#ffffff</color>
+
+    <color name="color_surface">#f5f5f5</color>
+    <color name="color_on_surface">#ff6c51</color>
+
+    <color name="color_error">#b00020</color>
+    <color name="color_on_error">#ffffff</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black_tundora">#444444</color>
+    <color name="grey_athens">#eeeeee</color>
+    <color name="grey_dove">#737373</color>
+
+    <color name="transparent">#00000000</color>
+
+
+    <!--Color-->
+    <!--Material uses an organized approach to applying color by providing a set of attributes -->
+    <!--which define the color of generalized UI elements such as backgrounds, surfaces, type -->
+    <!--and icons. Using these attributes throughout your app makes it easy to change a single -->
+    <!--color, or the entire theme, and have those changes cascade through the interface.-->
+
+    <!--Color is customized by overriding Material Components color attributes with custom -->
+    <!--color values. In this project, your theme’s color attributes are already overridden -->
+    <!--with default values defined in this file, color.xml.  Change any of the values in -->
+    <!--this file to see changes applied across all elements of your app.-->
+
+    <!--colorPrimary colors map to components and elements, such as app bars and buttons. -->
+    <!--colorSecondary colors are most often used as accents on components, such as FABs and -->
+    <!--selection controls.-->
+
+    <!--colorBackground appears behind scrollable content and is used for the default window-->
+    <!--background. colorSurface is mapped to the surface of components such as cards, sheets-->
+    <!--and menus. colorError is used to indicate an error state for components such as-->
+    <!--text fields.-->
+
+    <!--"On" colors define how text, icons and strokes are colored in relation to the surface-->
+    <!--on which they appear.-->
+</resources>
