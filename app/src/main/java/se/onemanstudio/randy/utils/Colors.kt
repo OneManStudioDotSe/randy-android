@@ -5,6 +5,7 @@ import com.github.ajalt.colormath.model.RGB
 object Colors {
     val white = RGB("ffffff")
     val black = RGB("#000000")
+    val grey = RGB("#d3d3d3")
 
     val red = RGB("#ff0000")
     val green = RGB("#00ff00")

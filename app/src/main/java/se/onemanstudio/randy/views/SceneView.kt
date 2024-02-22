@@ -157,8 +157,8 @@ class SceneView : SurfaceView, Runnable {
             canvas = ourHolder!!.lockCanvas() // Lock the canvas ready to draw
 
             drawBackgroundAndLimits()
-            drawJoints()
             drawConnections()
+            drawJoints()
             //drawTestItems()
 
             ourHolder!!.unlockCanvasAndPost(canvas) // Draw everything to the screen
@@ -209,7 +209,7 @@ class SceneView : SurfaceView, Runnable {
             canvas.drawCircle(joint.center.x.toFloat(), joint.center.y.toFloat(), JOINT_SIZE, paint)
 
             if (joint.isGoingSomewhere()) {
-                //drawDestinationLine(joint)
+                drawDestinationLine(joint)
             }
         }
     }
@@ -266,7 +266,7 @@ class SceneView : SurfaceView, Runnable {
     private fun drawDestinationLine(joint: Joint) {
         paint.strokeWidth = WIDTH_DESTINATION
 
-        paint.color = Colors.black.toColorInt()
+        paint.color = Colors.grey.toColorInt()
         canvas.drawLine(
             joint.center.x.toFloat(), joint.center.y.toFloat(),
             joint.destination!!.x.toFloat(),
@@ -324,7 +324,7 @@ class SceneView : SurfaceView, Runnable {
     companion object {
         const val SIZE_TEST_SQUARE = 50f
         const val WIDTH_BORDER = 10f
-        const val WIDTH_DESTINATION = 2f
+        const val WIDTH_DESTINATION = 1f
         const val WIDTH_NORMAL = 1f
 
         const val AMOUNT_OF_JOINTS = 6

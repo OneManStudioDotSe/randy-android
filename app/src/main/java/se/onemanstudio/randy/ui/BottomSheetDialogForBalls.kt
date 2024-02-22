@@ -35,25 +35,10 @@ class BottomSheetDialogForBalls : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.randomAmountOfJoints.setOnCheckedChangeListener { _, isChecked ->
-            BallsConfig.addRandomAmountOfJoints = isChecked
-        }
-
-        binding.hasRandomSpeed.setOnCheckedChangeListener { _, isChecked ->
-            BallsConfig.jointsHaveRandomSpeed = isChecked
-        }
-
-        binding.connectionsAnimate.setOnCheckedChangeListener { _, isChecked ->
-            BallsConfig.connectionsAnimate = isChecked
-        }
-
         binding.jointsHaveRandomColor.setOnCheckedChangeListener { _, isChecked ->
             BallsConfig.jointsHaveRandomColor = isChecked
         }
 
-        binding.discreteRangeSlider.addOnChangeListener { _, value, _ ->
-            BallsConfig.distanceToDrawConnection = value
-        }
 
         val items = listOf("Simple lines", "Curves", "Bezier")
         val stylesAdapter = ArrayAdapter(requireContext(), R.layout.list_item, items)
