@@ -1,5 +1,3 @@
-# randy
-
 ## Randy - A playground with balls, a.k.a. a random guy you met
 
 Randy is a random canvas that is alive, moves, makes sounds and changes. Every time he is different than how he has the last time you met him.
