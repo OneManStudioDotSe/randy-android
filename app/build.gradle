@@ -1,3 +1,6 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
@@ -12,11 +15,13 @@ def versionPatch = 1
 def versionBuild = 1
 
 android {
-    namespace 'se.onemanstudio.randy'
+    namespace "se.onemanstudio.randy"
+
     compileSdk 34
 
     defaultConfig {
         applicationId "se.onemanstudio.randy"
+
         minSdk 26
         targetSdk 34
 
@@ -25,9 +30,19 @@ android {
         setProperty("archivesBaseName", applicationId + "-" + versionName + "." + versionBuild)
 
         multiDexEnabled true
+    }
 
-        vectorDrawables {
-            useSupportLibrary true
+    buildFeatures.viewBinding = true
+    lint.abortOnError false
+    kapt.correctErrorTypes true
+
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/ASL2.0', 'META-INF/LICENSE', 'META-INF/license.txt',
+                         'META-INF/LICENSE.txt', 'META-INF/NOTICE', 'META-INF/notice.txt',
+                         'META-INF/NOTICE.txt', 'META-INF/services/javax.annotation.processing.Processor',
+                         'META-INF/DEPENDENCIES', 'LICENSE.txt']
+            pickFirsts += ['META-INF/atomicfu.kotlin_module']
         }
     }
 
@@ -36,29 +51,35 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
+        debug {
+            debuggable true
+
+            minifyEnabled false
+            shrinkResources false
+
+            jniDebuggable false
+            renderscriptDebuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_14
+        targetCompatibility JavaVersion.VERSION_14
     }
 
-    kotlinOptions {
-        jvmTarget = '17'
-    }
-
-    buildFeatures {
-        viewBinding true
-    }
-
-    packagingOptions {
-        resources {
-            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+    tasks.withType(KotlinCompile).configureEach {
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_14)
+            freeCompilerArgs.add("-opt-in=kotlin.RequiresOptIn")
         }
     }
 }
 
 dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
     //Core Android stuff
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation "androidx.multidex:multidex:2.0.1"
@@ -69,12 +90,12 @@ dependencies {
     implementation "com.google.android.material:material:1.11.0"
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0"
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.7.0'
     kapt "androidx.annotation:annotation:1.7.1"
 
     //Navigation
-    implementation "androidx.navigation:navigation-fragment-ktx:2.7.6"
-    implementation 'androidx.navigation:navigation-ui-ktx:2.7.6'
+    implementation "androidx.navigation:navigation-fragment-ktx:2.7.7"
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.7'
 
     //Tools to make life easier
     implementation "io.coil-kt:coil:2.5.0"
