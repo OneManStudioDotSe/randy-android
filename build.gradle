@@ -1,0 +1,35 @@
+apply plugin: "com.github.ben-manes.versions"
+//Check versions of dependencies: ./gradlew dependencyUpdates -Drevision=milestone -DoutputFormatter=json
+//Force-update dependencies:      ./gradlew clean build --refresh-dependencies
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.3.0-rc02'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22'
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.7.7"
+        classpath "com.github.ben-manes:gradle-versions-plugin:0.51.0"
+    }
+}
+
+dependencyUpdates.resolutionStrategy {
+    componentSelection { rules ->
+        rules.all { ComponentSelection selection ->
+
+            def isNonStable = { String version ->
+                ['alpha', 'cr', 'm', 'preview', 'b', 'ea'].any { qualifier ->
+                    version ==~ /(?i).*[.-]$qualifier[.\d-+]*/
+                }
+            }
+
+            if (isNonStable(candidate.version) && !isNonStable(currentVersion)) {
+                selection.reject('Release candidate')
+            }
+        }
+    }
+}

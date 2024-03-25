@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:overScrollMode="never"
+        android:scrollbarSize="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/headerMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Customisation"
+                android:textAllCaps="true" />
+
+            <TextView
+                style="@style/bodyStrong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:background="@color/color_primary_variant"
+                android:padding="8dp"
+                android:text="Nodes"
+                android:textAllCaps="true" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/random_node_size"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Random size"
+                tools:checked="false" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/random_node_color"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Random color"
+                tools:checked="false" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/random_node_shape"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Random shape"
+                tools:checked="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bodySimple"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="3"
+                    android:text="Starting position" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/node_starting_position"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="2"
+                    android:hint="Select one">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/node_starting_position_options"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="14sp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bodySimple"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="3"
+                    android:text="Movement pattern" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/node_movement_pattern"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="2"
+                    android:hint="Select one">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/node_movement_pattern_options"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="14sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/bodyStrong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:background="@color/color_primary_variant"
+                android:padding="8dp"
+                android:text="Joints"
+                android:textAllCaps="true" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/joint_random_amount"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Add random amount of them"
+                tools:checked="false" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/joints_have_random_color"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Random color"
+                tools:checked="false" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/drawTextOnPath"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Show connection distance"
+                tools:checked="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bodySimple"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="3"
+                    android:text="Distance to draw joint " />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/joint_draw_distance"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="2"
+                    android:hint="Select one">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/joint_draw_distance_options"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="14sp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/bodySimple"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="3"
+                    android:text="Connection line style" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/line_style"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="2"
+                    android:hint="Select one">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/line_style_options"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"
+                        android:textSize="14sp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/bodyStrong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:background="@color/color_primary_variant"
+                android:padding="8dp"
+                android:text="Extras"
+                android:textAllCaps="true" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/extra_show_up_animation"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Reveal animation"
+                tools:checked="false" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/extra_interpolated_move"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Interpolated movement"
+                tools:checked="false" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/extra_audio_effects"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Audio effects"
+                tools:checked="false" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/extra_color_transition"
+                style="@style/bodySimple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Color animation"
+                tools:checked="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_primary" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
