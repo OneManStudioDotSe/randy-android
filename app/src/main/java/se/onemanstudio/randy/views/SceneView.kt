@@ -21,7 +21,6 @@ import se.onemanstudio.randy.utils.NumberUtils
 import se.onemanstudio.randy.utils.SceneUtils
 import timber.log.Timber
 
-
 class SceneView : SurfaceView, Runnable {
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs)
