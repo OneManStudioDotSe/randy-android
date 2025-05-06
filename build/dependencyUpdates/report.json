@@ -1,22 +1,8 @@
 {
- "count": 25,
+ "count": 43,
  "current": {
-  "count": 22,
+  "count": 14,
   "dependencies": [
-   {
-    "group": "androidx.annotation",
-    "name": "annotation",
-    "version": "1.7.1",
-    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/annotation#1.7.1",
-    "userReason": null
-   },
-   {
-    "group": "androidx.appcompat",
-    "name": "appcompat",
-    "version": "1.6.1",
-    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/appcompat#1.6.1",
-    "userReason": null
-   },
    {
     "group": "androidx.cardview",
     "name": "cardview",
@@ -39,45 +25,10 @@
     "userReason": null
    },
    {
-    "group": "androidx.core",
-    "name": "core-ktx",
-    "version": "1.12.0",
-    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/core#1.12.0",
-    "userReason": null
-   },
-   {
-    "group": "androidx.databinding",
-    "name": "viewbinding",
-    "version": "8.2.0",
-    "projectUrl": null,
-    "userReason": null
-   },
-   {
     "group": "androidx.multidex",
     "name": "multidex",
     "version": "2.0.1",
     "projectUrl": null,
-    "userReason": null
-   },
-   {
-    "group": "androidx.navigation",
-    "name": "navigation-fragment-ktx",
-    "version": "2.7.6",
-    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/navigation#2.7.6",
-    "userReason": null
-   },
-   {
-    "group": "androidx.navigation",
-    "name": "navigation-safe-args-gradle-plugin",
-    "version": "2.7.6",
-    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/navigation#2.7.6",
-    "userReason": null
-   },
-   {
-    "group": "androidx.navigation",
-    "name": "navigation-ui-ktx",
-    "version": "2.7.6",
-    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/navigation#2.7.6",
     "userReason": null
    },
    {
@@ -88,38 +39,38 @@
     "userReason": null
    },
    {
-    "group": "com.android.tools.build",
-    "name": "gradle",
-    "version": "8.2.0",
-    "projectUrl": "https://developer.android.com/studio/build",
-    "userReason": null
-   },
-   {
-    "group": "com.github.ajalt.colormath",
-    "name": "colormath",
-    "version": "3.3.3",
-    "projectUrl": "https://github.com/ajalt/colormath/",
-    "userReason": null
-   },
-   {
-    "group": "com.github.ajalt.colormath",
-    "name": "colormath-ext-android-colorint",
-    "version": "3.3.3",
-    "projectUrl": "https://github.com/ajalt/colormath/",
-    "userReason": null
-   },
-   {
     "group": "com.github.ben-manes",
     "name": "gradle-versions-plugin",
-    "version": "0.50.0",
+    "version": "0.51.0",
     "projectUrl": null,
     "userReason": null
    },
    {
-    "group": "com.google.android.material",
-    "name": "material",
-    "version": "1.11.0",
-    "projectUrl": "https://github.com/material-components/material-components-android",
+    "group": "com.google.testing.platform",
+    "name": "android-driver-instrumentation",
+    "version": "0.0.9-alpha02",
+    "projectUrl": "https://developer.android.com/testing",
+    "userReason": null
+   },
+   {
+    "group": "com.google.testing.platform",
+    "name": "android-test-plugin",
+    "version": "0.0.9-alpha02",
+    "projectUrl": "https://developer.android.com/testing",
+    "userReason": null
+   },
+   {
+    "group": "com.google.testing.platform",
+    "name": "core",
+    "version": "0.0.9-alpha02",
+    "projectUrl": "https://developer.android.com/testing",
+    "userReason": null
+   },
+   {
+    "group": "com.google.testing.platform",
+    "name": "launcher",
+    "version": "0.0.9-alpha02",
+    "projectUrl": "https://developer.android.com/testing",
     "userReason": null
    },
    {
@@ -130,43 +81,84 @@
     "userReason": null
    },
    {
-    "group": "io.coil-kt",
-    "name": "coil",
-    "version": "2.5.0",
-    "projectUrl": "https://github.com/coil-kt/coil",
-    "userReason": null
-   },
-   {
     "group": "org.jetbrains.kotlin",
     "name": "kotlin-build-tools-impl",
-    "version": "1.9.0",
+    "version": "1.9.22",
     "projectUrl": "https://kotlinlang.org/",
     "userReason": null
    },
    {
     "group": "org.jetbrains.kotlin",
     "name": "kotlin-compiler-embeddable",
-    "version": "1.9.0",
+    "version": "1.9.22",
     "projectUrl": "https://kotlinlang.org/",
     "userReason": null
    },
    {
     "group": "org.jetbrains.kotlin",
     "name": "kotlin-klib-commonizer-embeddable",
-    "version": "1.9.0",
+    "version": "1.9.22",
     "projectUrl": "https://kotlinlang.org/",
     "userReason": null
    }
   ]
  },
  "outdated": {
-  "count": 3,
+  "count": 29,
   "dependencies": [
+   {
+    "group": "androidx.annotation",
+    "name": "annotation",
+    "version": "1.7.1",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/annotation#1.8.0",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "1.8.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "androidx.appcompat",
+    "name": "appcompat",
+    "version": "1.6.1",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/appcompat#1.7.0",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "1.7.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "androidx.core",
+    "name": "core-ktx",
+    "version": "1.12.0",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/core#1.13.1",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "1.13.1",
+     "integration": null
+    }
+   },
+   {
+    "group": "androidx.databinding",
+    "name": "viewbinding",
+    "version": "8.4.2",
+    "projectUrl": null,
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "8.5.0",
+     "integration": null
+    }
+   },
    {
     "group": "androidx.gridlayout",
     "name": "gridlayout",
     "version": "1.0.0",
-    "projectUrl": "http://developer.android.com/tools/extras/support-library.html",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/gridlayout#1.1.0-beta01",
     "userReason": null,
     "available": {
      "release": null,
@@ -177,24 +169,288 @@
    {
     "group": "androidx.lifecycle",
     "name": "lifecycle-runtime-ktx",
-    "version": "2.6.2",
-    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.6.2",
+    "version": "2.7.0",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/lifecycle#2.8.2",
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "2.7.0-rc02",
+     "milestone": "2.8.2",
+     "integration": null
+    }
+   },
+   {
+    "group": "androidx.navigation",
+    "name": "navigation-fragment-ktx",
+    "version": "2.7.7",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/navigation#2.8.0-beta03",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.8.0-beta03",
+     "integration": null
+    }
+   },
+   {
+    "group": "androidx.navigation",
+    "name": "navigation-safe-args-gradle-plugin",
+    "version": "2.7.7",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/navigation#2.8.0-beta03",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.8.0-beta03",
+     "integration": null
+    }
+   },
+   {
+    "group": "androidx.navigation",
+    "name": "navigation-ui-ktx",
+    "version": "2.7.7",
+    "projectUrl": "https://developer.android.com/jetpack/androidx/releases/navigation#2.8.0-beta03",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.8.0-beta03",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.build",
+    "name": "gradle",
+    "version": "8.4.2",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "8.5.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-device-provider-ddmlib",
+    "version": "31.4.2",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.5.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-device-provider-gradle",
+    "version": "31.4.2",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.5.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-host-additional-test-output",
+    "version": "31.4.2",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.5.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-host-apk-installer",
+    "version": "31.4.2",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.5.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-host-coverage",
+    "version": "31.4.2",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.5.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-host-device-info",
+    "version": "31.4.2",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.5.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-host-emulator-control",
+    "version": "31.4.2",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.5.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-host-logcat",
+    "version": "31.4.2",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.5.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-host-retention",
+    "version": "31.4.2",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.5.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.android.tools.utp",
+    "name": "android-test-plugin-result-listener-gradle",
+    "version": "31.4.2",
+    "projectUrl": "https://developer.android.com/studio/build",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "31.5.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.github.ajalt.colormath",
+    "name": "colormath",
+    "version": "3.3.3",
+    "projectUrl": "https://github.com/ajalt/colormath/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "3.5.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.github.ajalt.colormath",
+    "name": "colormath-ext-android-colorint",
+    "version": "3.3.3",
+    "projectUrl": "https://github.com/ajalt/colormath/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "3.5.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "com.google.android.material",
+    "name": "material",
+    "version": "1.11.0",
+    "projectUrl": "https://github.com/material-components/material-components-android",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "1.12.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "io.coil-kt",
+    "name": "coil",
+    "version": "2.5.0",
+    "projectUrl": "https://github.com/coil-kt/coil",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.6.0",
      "integration": null
     }
    },
    {
     "group": "org.jetbrains.kotlin",
-    "name": "kotlin-stdlib-jdk8",
-    "version": "1.9.0",
+    "name": "kotlin-annotation-processing-gradle",
+    "version": "1.9.22",
     "projectUrl": "https://kotlinlang.org/",
     "userReason": null,
     "available": {
      "release": null,
-     "milestone": "1.9.10",
+     "milestone": "2.0.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-gradle-plugin",
+    "version": "1.9.22",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.0.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-parcelize-compiler",
+    "version": "1.9.22",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.0.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-parcelize-runtime",
+    "version": "1.9.22",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.0.0",
+     "integration": null
+    }
+   },
+   {
+    "group": "org.jetbrains.kotlin",
+    "name": "kotlin-stdlib",
+    "version": "1.9.22",
+    "projectUrl": "https://kotlinlang.org/",
+    "userReason": null,
+    "available": {
+     "release": null,
+     "milestone": "2.0.0",
      "integration": null
     }
    }
@@ -218,13 +474,13 @@
    "isFailure": false,
    "isUpdateAvailable": false,
    "reason": "",
-   "version": "8.2"
+   "version": "8.6"
   },
   "current": {
    "isFailure": false,
    "isUpdateAvailable": true,
    "reason": "",
-   "version": "8.5"
+   "version": "8.8"
   },
   "releaseCandidate": {
    "isFailure": false,
